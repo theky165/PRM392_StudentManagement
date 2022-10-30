@@ -25,7 +25,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:text="Class" />
+            android:text="Class"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <Spinner
             android:id="@+id/spClasses"
@@ -38,7 +40,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:text="ID Student" />
+            android:text="ID Student"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/etStudentId"
@@ -53,7 +57,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:text="Name Student" />
+            android:text="Name Student"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/etName"
@@ -68,7 +74,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:text="Date of Birth" />
+            android:text="Date of Birth"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/etDob"
@@ -90,7 +98,9 @@
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:text="Save"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btnDelete"
@@ -98,12 +108,15 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:text="Delete" />
+                android:text="Delete"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
     </LinearLayout>
 
     <ListView
+        android:id="@+id/spC"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
