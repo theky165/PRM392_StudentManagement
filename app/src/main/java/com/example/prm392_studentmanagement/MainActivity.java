@@ -2,10 +2,12 @@ package com.example.prm392_studentmanagement;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
 
+import com.example.prm392_studentmanagement.activity.ListClassesActivity;
+import com.example.prm392_studentmanagement.activity.ManageStudentActivity;
 import com.example.prm392_studentmanagement.dialog.NewClassDialog;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -16,7 +18,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         findViewById(R.id.btnNewClass).setOnClickListener(this);
         findViewById(R.id.btnClasses).setOnClickListener(this);
-        findViewById(R.id.btnListStudents).setOnClickListener(this);
+        findViewById(R.id.btnManagementStudent).setOnClickListener(this);
         findViewById(R.id.btnLogout).setOnClickListener(this);
     }
 
@@ -28,8 +30,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 dialog.show();
                 break;
             case R.id.btnClasses:
+                Intent intent = new Intent(this, ListClassesActivity.class);
+                startActivity(intent);
                 break;
-            case R.id.btnListStudents:
+            case R.id.btnManagementStudent:
+                Intent mgnIntent = new Intent(this, ManageStudentActivity.class);
+                startActivity(mgnIntent);
                 break;
             case R.id.btnLogout:
                 break;

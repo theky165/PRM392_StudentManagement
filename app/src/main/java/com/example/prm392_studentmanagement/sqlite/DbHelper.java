@@ -20,7 +20,7 @@ public class DbHelper extends SQLiteOpenHelper {
     String classesSql = "CREATE TABLE classes(id integer primary key autoincrement,"+
             " name text not null)";
     String studentsSql = "CREATE TABLE students(id text primary key,"+
-             " name text not null, classid integer, dob text, phone text," +
+             " name text not null, classid integer, dob text," +
             "FOREIGN KEY (classid) REFERENCES classes(id))";
     sqLiteDatabase.execSQL(classesSql);
     sqLiteDatabase.execSQL(studentsSql);

@@ -7,17 +7,15 @@ public class Student {
     private  String name;
     private Date dob;
     private  int classId;
-    private  String phone;
 
     public Student() {
     }
 
-    public Student(String id, String name, Date dob, int classId, String phone) {
+    public Student(String id, String name, Date dob, int classId) {
         this.id = id;
         this.name = name;
         this.dob = dob;
         this.classId = classId;
-        this.phone = phone;
     }
 
     public String getId() {
@@ -52,11 +50,5 @@ public class Student {
         this.classId = classId;
     }
 
-    public String getPhone() {
-        return phone;
-    }
 
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
 }

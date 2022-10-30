@@ -61,7 +61,7 @@
             android:text="Class" />
 
         <Button
-            android:id="@+id/btnListStudents"
+            android:id="@+id/btnManagementStudent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="3sp"
