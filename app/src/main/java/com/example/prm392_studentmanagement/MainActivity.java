@@ -6,7 +6,7 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.prm392_studentmanagement.Activity.ListClassesActivity;
+import com.example.prm392_studentmanagement.activity.ListClassesActivity;
 import com.example.prm392_studentmanagement.activity.ManageStudentActivity;
 import com.example.prm392_studentmanagement.dialog.NewClassDialog;
 
