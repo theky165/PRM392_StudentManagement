@@ -1,12 +1,12 @@
 package com.example.prm392_studentmanagement;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.prm392_studentmanagement.activity.ListClassesActivity;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.prm392_studentmanagement.Activity.ListClassesActivity;
 import com.example.prm392_studentmanagement.activity.ManageStudentActivity;
 import com.example.prm392_studentmanagement.dialog.NewClassDialog;
 
