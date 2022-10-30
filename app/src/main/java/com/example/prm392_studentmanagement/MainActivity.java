@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import com.example.prm392_studentmanagement.dialog.NewClassDialog;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
@@ -22,7 +24,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btnNewClass:
-                Toast.makeText(this, "New class", Toast.LENGTH_SHORT).show();
+                NewClassDialog dialog = new NewClassDialog(this);
+                dialog.show();
                 break;
             case R.id.btnClasses:
                 break;
