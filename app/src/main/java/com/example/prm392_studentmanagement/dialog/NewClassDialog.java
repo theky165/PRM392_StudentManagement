@@ -10,6 +10,8 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 
 import com.example.prm392_studentmanagement.R;
+import com.example.prm392_studentmanagement.model.Classes;
+import com.example.prm392_studentmanagement.sqlite.ClassesDAO;
 
 public class NewClassDialog extends Dialog implements View.OnClickListener {
     private Context context;
@@ -36,7 +38,13 @@ public class NewClassDialog extends Dialog implements View.OnClickListener {
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.btnSave:
+                Classes cls = new Classes();
+                cls.setName(etName.getText().toString());
+                ClassesDAO classesDAO = new ClassesDAO(context);
+                classesDAO.insert(cls);
                 Toast.makeText(context, "Class saved successful!", Toast.LENGTH_SHORT).show();
+
+                dismiss();
                 break;
             case R.id.btnClose:
                 dismiss();
