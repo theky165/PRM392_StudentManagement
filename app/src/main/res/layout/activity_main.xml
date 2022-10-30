@@ -47,6 +47,13 @@
             android:textStyle="bold" />
 
         <Button
+            android:id="@+id/btnNewClass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3sp"
+            android:text="Add Class" />
+
+        <Button
             android:id="@+id/btnClasses"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
