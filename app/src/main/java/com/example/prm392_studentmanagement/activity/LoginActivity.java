@@ -1,4 +1,4 @@
-package com.example.prm392_studentmanagement.Activity;
+package com.example.prm392_studentmanagement.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
