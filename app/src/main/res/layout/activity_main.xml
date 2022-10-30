@@ -46,52 +46,59 @@
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/btnListStudents"
+            android:id="@+id/btnAddClass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="5sp"
-            android:text="Student" />
+            android:layout_margin="3sp"
+            android:text="Add Class" />
 
         <Button
             android:id="@+id/btnClasses"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="5sp"
+            android:layout_margin="3sp"
             android:text="Class" />
+
+        <Button
+            android:id="@+id/btnListStudents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3sp"
+            android:text="Student" />
 
         <Button
             android:id="@+id/btnSubject"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="5sp"
+            android:layout_margin="3sp"
             android:text="Subject" />
 
         <Button
             android:id="@+id/btnTeacher"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="5sp"
+            android:layout_margin="3sp"
             android:text="Teacher" />
 
         <Button
             android:id="@+id/btnAttendance"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="5sp"
+            android:layout_margin="3sp"
             android:text="Attendance" />
 
         <Button
             android:id="@+id/btnSchedule"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="5sp"
+            android:layout_margin="3sp"
             android:text="Schedule" />
 
         <Button
             android:id="@+id/btnLogout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="5sp"
+            android:layout_margin="3sp"
             android:text="Log out" />
 
     </LinearLayout>
