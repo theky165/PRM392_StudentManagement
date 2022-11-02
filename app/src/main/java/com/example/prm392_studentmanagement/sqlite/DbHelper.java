@@ -19,10 +19,13 @@ public class DbHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
     String classesSql = "CREATE TABLE classes(id integer primary key autoincrement,"+
             " name text not null)";
+    String subjectSql = "CREATE TABLE subjects(id integer primary key autoincrement,"+
+            " name text not null)";
     String studentsSql = "CREATE TABLE students(id text primary key,"+
              " name text not null, classid integer, dob text," +
             "FOREIGN KEY (classid) REFERENCES classes(id))";
     sqLiteDatabase.execSQL(classesSql);
+    sqLiteDatabase.execSQL(subjectSql);
     sqLiteDatabase.execSQL(studentsSql);
 
     }
@@ -30,9 +33,11 @@ public class DbHelper extends SQLiteOpenHelper {
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
         String classesSql = "DROP TABLE IF EXISTS  classes";
+        String subjectSql = "DROP TABLE IF EXISTS  subjects";
         String studentsSql = "DROP TABLE IF EXISTS  students";
 
         sqLiteDatabase.execSQL(classesSql);
+        sqLiteDatabase.execSQL(subjectSql);
         sqLiteDatabase.execSQL(studentsSql);
         onCreate(sqLiteDatabase);
     }

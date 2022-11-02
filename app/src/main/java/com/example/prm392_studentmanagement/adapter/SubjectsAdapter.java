@@ -8,15 +8,15 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import com.example.prm392_studentmanagement.R;
-import com.example.prm392_studentmanagement.model.Classes;
+import com.example.prm392_studentmanagement.model.Subjects;
 
 import java.util.List;
 
-public class ClassesAdapter extends BaseAdapter {
+public class SubjectsAdapter extends BaseAdapter {
     private Context context;
-    private List<Classes> list;
+    private List<Subjects> list;
 
-    public ClassesAdapter(Context context, List<Classes> list) {
+    public SubjectsAdapter(Context context, List<Subjects> list) {
         this.context = context;
         this.list = list;
     }
@@ -39,13 +39,13 @@ public class ClassesAdapter extends BaseAdapter {
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
         if (view == null){
-            view = LayoutInflater.from(context).inflate(R.layout.layout_classes_item, null);
+            view = LayoutInflater.from(context).inflate(R.layout.layout_subjects_item, null);
         }
 
         TextView tvId = view.findViewById(R.id.tvSubjectId);
         TextView tvName = view.findViewById(R.id.tvName);
 
-        Classes cls = list.get(i);
+        Subjects cls = list.get(i);
         tvId.setText("" + cls.getId());
         tvName.setText(cls.getName());
         return view;

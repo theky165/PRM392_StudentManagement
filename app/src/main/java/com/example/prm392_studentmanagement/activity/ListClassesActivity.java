@@ -24,7 +24,7 @@ public class ListClassesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_classes);
 
-        lvClasses = findViewById(R.id.lvClasses);
+        lvClasses = findViewById(R.id.lvSubjects);
 
         fillClassListView();
 
