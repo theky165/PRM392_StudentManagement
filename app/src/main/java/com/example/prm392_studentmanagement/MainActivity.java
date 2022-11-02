@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.prm392_studentmanagement.activity.ListClassesActivity;
 import com.example.prm392_studentmanagement.activity.ManageStudentActivity;
 import com.example.prm392_studentmanagement.dialog.NewClassDialog;
+import com.example.prm392_studentmanagement.dialog.NewSubjectDialog;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btnNewClass).setOnClickListener(this);
         findViewById(R.id.btnClasses).setOnClickListener(this);
         findViewById(R.id.btnManagementStudent).setOnClickListener(this);
+        findViewById(R.id.btnSubject).setOnClickListener(this);
         findViewById(R.id.btnLogout).setOnClickListener(this);
     }
 
@@ -36,6 +38,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btnManagementStudent:
                 Intent mgnIntent = new Intent(this, ManageStudentActivity.class);
                 startActivity(mgnIntent);
+                break;
+            case R.id.btnAddSubject:
+                NewSubjectDialog newSubjectDialog = new NewSubjectDialog(this);
+                newSubjectDialog.show();
                 break;
             case R.id.btnLogout:
                 break;
